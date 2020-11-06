@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c051fffe-2470-49f3-b737-d0d3f7988876" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GitProject/source/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitProject/source/orderForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GitProject/source/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/source/cv.html" afterDir="false" />
     </list>
@@ -31,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -51,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,7 +70,7 @@
       <workItem from="1604560376614" duration="939000" />
       <workItem from="1604561389890" duration="2104000" />
       <workItem from="1604563532471" duration="1313000" />
-      <workItem from="1604633654146" duration="7980000" />
+      <workItem from="1604633654146" duration="14823000" />
     </task>
     <servers />
   </component>

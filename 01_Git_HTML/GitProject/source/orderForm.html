@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="main.css" >
+</head>
+<body>
+<div class="frStype">
+<h1>Order Form</h1>
+<p>What would you llike to buy?</p>
+<form method="get" action="orderForm.html">
+<!--Chọn mặt hàng-->
+    <select>
+        <option value="HH001">Táo đỏ</option>
+        <option value="HH002">Cà chua</option>
+        <option value="HH003">Nho đen</option>
+    </select>
+<!--Chọn số lượng-->
+    <p>How many would you like to order?</p>
+    <input type="radio" name="order"/>1-$10<br>
+    <input type="radio" name="order"/>2-$20<br>
+    <input type="radio" name="order"/>3-$30<br>
+<!--Nhập tên người mua-->
+    <p><b>Name <samp style="color: red">*</b></p>
+    <input type="text" name="firstName" placeholder="First Name" size="10px"/>
+    <input type="text" name="lastName" placeholder="Last Name" size="10px"/>
+<!--Nhập Email người mua-->
+    <p><b>Email</b></p>
+    <input type="text" name="email" size="20px"/>
+<!--Điện thoại liên hệ-->
+    <p><b>Phone Number</b></p>
+    <input type="text" size="5px"/>-
+    <input type="text" size="5px"/>-
+    <input type="text" size="5px"/>
+<!--Tạo nút submit-->
+    <p><input type="button" name="btSubmit" value="Submit"/></p>
+
+</form>
+</div>
+</body>
+</html>
