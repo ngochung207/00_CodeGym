@@ -10,3 +10,60 @@
     margin-left: 356px;
     border-style: inset;
 }
+#title{
+    background-color: red;
+    color: aliceblue;
+    font-size: 30px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.main-form{
+    width: 400px;
+    height: 300px;
+}
+.info{
+    width: 280px;
+    height: 60px;
+}
+.info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.info-item{
+}
+.interests-container{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#soThich{
+    margin-left: 40px;
+}
+.anNhac{
+    margin-left: 20px;
+}
+.docSach{
+    margin-left: 20px;
+}
+.web{
+    margin-left: 97px;
+}
+.game{
+    margin-left: 15px;
+}
+.movie{
+    margin-left: 9.5px;
+}
+.duLich{
+    margin-left: 97px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
