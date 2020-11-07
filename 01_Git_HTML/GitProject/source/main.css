@@ -47,21 +47,27 @@
 }
 .anNhac{
     margin-left: 20px;
+    color: red;
 }
 .docSach{
     margin-left: 20px;
+    color: red;
 }
 .web{
     margin-left: 97px;
+    color: red;
 }
 .game{
     margin-left: 15px;
+    color: red;
 }
 .movie{
     margin-left: 9.5px;
+    color: red;
 }
 .duLich{
     margin-left: 97px;
+    color: red;
 }
 .button{
     display: flex;
