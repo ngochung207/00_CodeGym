@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<form action="login" name="form-name" style="width: 500px; height: 300px; background-color:burlywood">
+    <p><h2>ĐĂNG KÝ HỌC VIÊN</h2></p>
+
+    <div class="dangky_tab">
+        <label>Họ và tên</label>
+        <input type="text" name="name"/>
+    </div>
+    <div class="dangky_tab">
+        <label>Ngày sinh</label>
+        <input type="text" name="bir"/>
+    </div>
+    <div class="dangky_tab">
+        <label>Giới tính</label>
+        <input type="radio" name="gender"/>Nam
+        <input type="radio" name="gender"/>Nữ
+        <input type="radio" name="gender"/>Khác
+    </div>
+    <div class="dangky_tab">
+        <label>Địa chỉ</label>
+        <textarea cols="50" rows="5"></textarea>
+    </div>
+    <div class="dangky_tab">
+        <label>Lớp</label>
+        <select>
+            <option>--Chọn lớp--</option>
+            <option>A1</option>
+            <option>A2</option>
+            <option>A3</option>
+            <option>A4</option>
+        </select>
+    </div>
+    <div class="dangky_tab">
+        <label>Email</label>
+        <input type="text" name="email"/>
+    </div>
+    <div class="dangky_tab">
+        <label>Điện thoại</label>
+        <input type="text" name="phone"/>
+    </div>
+    <div class="dangky_tab">
+        <input type="submit" name="bt_submit" value="Đăng ký"/>
+        <input type="reset" name="bt_reset" value="Nhập lại"/>
+    </div>
+</form>
+
+</body>
+</html>
