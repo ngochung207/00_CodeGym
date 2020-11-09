@@ -1,0 +1,23 @@
+body{
+    font-family: "Times New Roman";
+    font-size: 15px;
+}
+table{
+    border-collapse: collapse;
+    font-size: 15px;
+    font-family: "Times New Roman";
+}
+th, td{
+    padding: 20px;
+    border: 1px solid black;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    text-align: center;
+}
+td{
+    padding: 5px 5px 5px 5px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
