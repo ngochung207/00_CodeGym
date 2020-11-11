@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/02_JavScript/08. If-else/sign.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -85,7 +85,7 @@
       <workItem from="1604990070344" duration="2392000" />
       <workItem from="1604992742210" duration="8174000" />
       <workItem from="1605003813439" duration="1699000" />
-      <workItem from="1605056581824" duration="19852000" />
+      <workItem from="1605056581824" duration="21938000" />
     </task>
     <servers />
   </component>
@@ -185,9 +185,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604965428163" />
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1604992994109">
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1605087393238">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1604992994109" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1605087393238" />
   </component>
 </project>
