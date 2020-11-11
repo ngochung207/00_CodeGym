@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bắt sự kiện từ bàn phím</title>
+</head>
+<body onload="docReady();">
+<img id="icon" src="../../01_Git_HTML/GitProject/image/anhThe.jpg"/>
+<script>
+    let element = document.getElementById("icon");
+    function upArrowPressed(){
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    };
+    function downArrowPressed(){
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    };
+    function leftArrowPressed(){
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    };
+    function rightArrowPressed(){
+        element.style.right = parseInt(element.style.right) + 5 + 'px';
+    };
+
+    function moveSelection(evt){
+        switch (evt.keyCode){
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                leftArrowPressed();
+                break;
+        }
+    }
+
+    function docReady(){
+        window.addEventListener('keydown', moveSelection);
+    }
+
+</script>
+</body>
+</html>

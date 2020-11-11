@@ -6,7 +6,7 @@
 </head>
 <body>
 <img id = 'myImage' src="https://cdn.shopify.com/s/files/1/1581/5497/products/Ball_1024x1024.jpg?v=1489527672" style="width: 20%" alt="None"/>
-<p>Click button below to move the image to right</p>
+<p><b>Click button below to move the image to right</b></p>
 <input type="button" name="button" value="Move left" onclick="moveLeft();"/>
 <input type="button" name="button" value="Come Back" onclick="init();"/>
 <input type="button" name="button" value="Move right" onclick="moveRight();"/>
@@ -23,7 +23,7 @@
     function moveLeft(){
         imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
     };
-    window.onload = init;
+    // window.onload = init;
 </script>
 </body>
 </html>

@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02_JavScript/su_kien_click_chuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_JavScript/bat_su_kien_ban_phim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_JavScript/mayTinh.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_JavScript/may_tinh_ca_nhan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_JavScript/su_kien_click_chuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_JavScript/su_kien_click_chuot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,6 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,7 +71,9 @@
       <workItem from="1604914443648" duration="3350000" />
       <workItem from="1604939185825" duration="1275000" />
       <workItem from="1604990070344" duration="2392000" />
-      <workItem from="1604992742210" duration="3284000" />
+      <workItem from="1604992742210" duration="8174000" />
+      <workItem from="1605003813439" duration="1699000" />
+      <workItem from="1605056581824" duration="933000" />
     </task>
     <servers />
   </component>
@@ -86,6 +93,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="254" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605002958575">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="254" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.870@0.0.1600.870" timestamp="1605002958575" />
+    <state x="530" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605003247869">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="530" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.870@0.0.1600.870" timestamp="1605003247869" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1604965428163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
