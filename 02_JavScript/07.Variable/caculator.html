@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <script>
+        function calculator(operator) {
+            let firstNumber = +document.getElementById("firstNumber").value;
+            let secondNumber = +document.getElementById("secondNumber").value;
+            let result = 0;
+            let str;
+            switch (operator) {
+                case 'Addition(+)':
+                    result = firstNumber + secondNumber;
+                    str = "Result Addition: ";
+                    break;
+                case 'Subtraction(-)':
+                    result = firstNumber - secondNumber;
+                    str = "Result Subtraction: ";
+                    break;
+                case 'Multiplication(x)':
+                    result = firstNumber * secondNumber;
+                    str = "Result Multiplication: ";
+                    break;
+                case 'Division(/)':
+                    result = firstNumber / secondNumber;
+                    str = "Result Division: ";
+                    break;
+                default:
+                    break;
+            }
+            str += result;
+            document.getElementById("result-id").innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><label><b>Caculator</b></label></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input id="firstNumber" type="text" size="30px"/></td>
+        <td colspan="2"><input id="secondNumber" type="text" size="30px"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Addition(+)" onclick="calculator('Addition(+)')"></td>
+        <td><input type="button" value="Subtraction(-)" onclick="calculator('Subtraction(-)')"></td>
+        <td><input type="button" value="Multiplication(x)" onclick="calculator('Multiplication(x)')"></td>
+        <td><input type="button" value="Division(/)" onclick="calculator('Division(/)')"></td>
+    </tr>
+    <tr>
+        <td colspan="4" id="result-id"></td>
+    </tr>
+</table>
+</body>
+
+</html>

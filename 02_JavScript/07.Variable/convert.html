@@ -33,32 +33,30 @@
 <body>
 <div>
 </div>
-<form>
-    <table>
-        <tr>
-            <td><label>Amount</label></td>
-            <td><label>From Currency</label></td>
-            <td><label>To Currency</label></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><input id="amount" type="text" size="20px" height="100px"/></td>
-            <td><select id="fromCurr">
-                <option value="choose-curr"><lable>--Lựa chọn nguyên tệ--</lable></option>
-                <option value="vnd"><lable>Việt Nam</lable></option>
-                <option value="usd"><lable>Dollar Mỹ</lable></option>
-                <option value="eur"><lable>Euro</lable></option>
-            </select></td>
-            <td><select id="toCurr">
-                <option value="choose-curr"><lable>--Lựa chọn ngoại tệ--</lable></option>
-                <option value="vnd"><lable>Việt Nam</lable></option>
-                <option value="usd"><lable>Dollar Mỹ</lable></option>
-                <option value="eur"><lable>Euro</lable></option>
-            </select></td>
-            <td><input type="button" value="Convert" onclick="convert();"></td>
-        </tr>
-    </table>
-    <b><p id="ketQua"></p></b>
-</form>
+<table>
+    <tr>
+        <td><label>Amount</label></td>
+        <td><label>From Currency</label></td>
+        <td><label>To Currency</label></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input id="amount" type="text" size="20px" height="100px"/></td>
+        <td><select id="fromCurr">
+            <option value="choose-curr"><lable>--Lựa chọn nguyên tệ--</lable></option>
+            <option value="vnd"><lable>Việt Nam</lable></option>
+            <option value="usd"><lable>Dollar Mỹ</lable></option>
+            <option value="eur"><lable>Euro</lable></option>
+        </select></td>
+        <td><select id="toCurr">
+            <option value="choose-curr"><lable>--Lựa chọn ngoại tệ--</lable></option>
+            <option value="vnd"><lable>Việt Nam</lable></option>
+            <option value="usd"><lable>Dollar Mỹ</lable></option>
+            <option value="eur"><lable>Euro</lable></option>
+        </select></td>
+        <td><input type="button" value="Convert" onclick="convert();"></td>
+    </tr>
+</table>
+<b><p id="ketQua"></p></b>
 </body>
 </html>
