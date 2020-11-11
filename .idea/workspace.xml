@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_JavScript/07.Variable/convert.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_JavScript/07.Variable/convert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
       <workItem from="1604990070344" duration="2392000" />
       <workItem from="1604992742210" duration="8174000" />
       <workItem from="1605003813439" duration="1699000" />
-      <workItem from="1605056581824" duration="18610000" />
+      <workItem from="1605056581824" duration="19852000" />
     </task>
     <servers />
   </component>

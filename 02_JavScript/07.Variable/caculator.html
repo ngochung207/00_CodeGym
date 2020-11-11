@@ -29,9 +29,22 @@
                 default:
                     break;
             }
-            str += result;
-            document.getElementById("result-id").innerHTML = str;
+            str+= result
+            document.getElementById("result-id").innerHTML = str
         }
+        function calculator_onchange(){
+            let firstNumber = +document.getElementById("firstNumber").value;
+            let secondNumber = +document.getElementById("secondNumber").value;
+            let result1, result2, result3, result4;
+            result1 = firstNumber + secondNumber;
+            result2 = firstNumber - secondNumber;
+            result3 = firstNumber * secondNumber;
+            result4 = firstNumber / secondNumber;
+            document.getElementById("result-id1").innerHTML = result1;
+            document.getElementById("result-id2").innerHTML = result2;
+            document.getElementById("result-id3").innerHTML = result3;
+            document.getElementById("result-id4").innerHTML = result4;
+            }
     </script>
 </head>
 <body>
@@ -40,8 +53,8 @@
         <td colspan="4"><label><b>Caculator</b></label></td>
     </tr>
     <tr>
-        <td colspan="2"><input id="firstNumber" type="text" size="30px"/></td>
-        <td colspan="2"><input id="secondNumber" type="text" size="30px"/></td>
+        <td colspan="2"><input id="firstNumber" type="text" size="30px" onchange="calculator_onchange()"/></td>
+        <td colspan="2"><input id="secondNumber" type="text" size="30px" onchange="calculator_onchange()"/></td>
     </tr>
     <tr>
         <td><input type="button" value="Addition(+)" onclick="calculator('Addition(+)')"></td>
@@ -50,9 +63,13 @@
         <td><input type="button" value="Division(/)" onclick="calculator('Division(/)')"></td>
     </tr>
     <tr>
-        <td colspan="4" id="result-id"></td>
+        <td id="result-id1"></td>
+        <td id="result-id2"></td>
+        <td id="result-id3"></td>
+        <td id="result-id4"></td>
     </tr>
 </table>
+<p id="result-id"></p>
 </body>
 
 </html>
