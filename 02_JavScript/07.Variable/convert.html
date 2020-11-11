@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="convert-css.css">
+    <script>
+        function convert(){
+            let inputAmountValue = +document.getElementById("amount").value;
+            let rate_table = {
+                'vnd': 1,
+                'usd': 23000,
+                'eur': 27000,
+            };
+            // Lấy mã nguyên tệ và ngoại tệ.
+            let fromCurrCode = document.getElementById("fromCurr").value;
+            let toCurrCode = document.getElementById("toCurr").value;
+            // Tính tỉ lệ quy đổi.
+            let fromCurrValue = rate_table[fromCurrCode];
+            let toCurrValue = rate_table[toCurrCode];
+            let currRate = fromCurrValue/toCurrValue;
+            // Tính ra kết quả quy đổi
+            let result = inputAmountValue * currRate;
+            // Xuất dữ liệu
+            let str = inputAmountValue.toLocaleString() + " "
+                str += fromCurrCode.toUpperCase() + " = "
+                str += result.toLocaleString() + " " + toCurrCode.toUpperCase();
+            document.getElementById("ketQua").innerText= str;
+        };
+
+    </script>
+</head>
+<body>
+<div>
+</div>
+<form>
+    <table>
+        <tr>
+            <td><label>Amount</label></td>
+            <td><label>From Currency</label></td>
+            <td><label>To Currency</label></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="amount" type="text" size="20px" height="100px"/></td>
+            <td><select id="fromCurr">
+                <option value="choose-curr"><lable>--Lựa chọn nguyên tệ--</lable></option>
+                <option value="vnd"><lable>Việt Nam</lable></option>
+                <option value="usd"><lable>Dollar Mỹ</lable></option>
+                <option value="eur"><lable>Euro</lable></option>
+            </select></td>
+            <td><select id="toCurr">
+                <option value="choose-curr"><lable>--Lựa chọn ngoại tệ--</lable></option>
+                <option value="vnd"><lable>Việt Nam</lable></option>
+                <option value="usd"><lable>Dollar Mỹ</lable></option>
+                <option value="eur"><lable>Euro</lable></option>
+            </select></td>
+            <td><input type="button" value="Convert" onclick="convert();"></td>
+        </tr>
+    </table>
+    <b><p id="ketQua"></p></b>
+</form>
+</body>
+</html>
