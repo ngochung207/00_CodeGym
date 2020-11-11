@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function cal_days(){
+            let month = +document.getElementById("id-text").value;
+            let days = 0;
+            switch (month){
+                case 1:
+                    days = 31;
+                    break;
+                case 2:
+                    days = "28 hoặc 29";
+                    break;
+                case 3:
+                    days = 31;
+                    break;
+                case 4:
+                    days = 30;
+                    break;
+                case 5:
+                    days = 31;
+                    break;
+                case 6:
+                    days = 30;
+                    break;
+                case 7:
+                    days = 31;
+                    break;
+                case 8:
+                    days = 31;
+                    break;
+                case 9:
+                    days = 30;
+                    break;
+                case 10:
+                    days = 31;
+                    break;
+                case 11:
+                    days = 30;
+                    break;
+                case 12:
+                    days = 31;
+                    break;
+            }
+            let str = "Tháng " + month + " có " + days + " ngày"
+            document.getElementById("result").innerHTML = str
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="id-text" size="15px"/></td>
+        <td><input type="button" value="Tính số ngày" onclick="cal_days()"></td>
+    </tr>
+    <tr>
+        <td colspan="2" id="result"></td>
+    </tr>
+</table>
+</body>
+</html>
