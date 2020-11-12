@@ -1,0 +1,13 @@
+table {
+  border: 0.5mm solid red;
+  text-align: left;
+  border-collapse: collapse;
+  width: 5cm;
+}
+tr,
+td {
+  color: black;
+}
+ul {
+  list-style: square;
+}
