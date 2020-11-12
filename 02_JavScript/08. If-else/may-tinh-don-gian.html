@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <link rel="stylesheet" href="may-tinh-don-gian.css">
+    <script>
+        function calculator(idButton){
+            let click = +document.getElementById(idButton).value;
+            return click;
+        }
+        console.log(click);
+    </script>
+</head>
+<body>
+<table>
+     <tr>
+         <td colspan="4"><input type="text" class="input" id="display-id"></td>
+     </tr>
+     <tr>
+         <td><input type="button" class="button" id="number1" value="1" onclick="calculator('number1');"/></td>
+         <td><input type="button" class="button" id="number2" value="2" onclick="calculator('number2');"/></td>
+         <td><input type="button" class="button" id="number3" value="3" onclick="calculator('number3');"/></td>
+         <td><input type="button" class="button" id="cong" value="+" onclick="calculator('cong');"/></td>
+     </tr>
+     <tr>
+         <td><input type="button" class="button" id="number4" value="4" onclick="calculator('number4');"/></td>
+         <td><input type="button" class="button" id="number5" value="5" onclick="calculator('number5');"/></td>
+         <td><input type="button" class="button" id="number6" value="6" onclick="calculator('number6');"/></td>
+         <td><input type="button" class="button" value="-" onclick="calculator('tru');"/></td>
+     </tr>
+     <tr>
+         <td><input type="button" class="button" id="number7" value="7" onclick="calculator('number7');"/></td>
+         <td><input type="button" class="button" id="number8" value="8" onclick="calculator('number8');"/></td>
+         <td><input type="button" class="button" id="number9" value="9" onclick="calculator('number9');"/></td>
+         <td><input type="button" class="button" value="x" onclick="calculator('nhan');"/></td>
+     </tr>
+     <tr>
+         <td><input type="button" class="button" value="C"></td>
+         <td><input type="button" class="button" value="0"></td>
+         <td><input type="button" class="button" value="="></td>
+         <td><input type="button" class="button" value="/"></td>
+     </tr>
+</table>
+</body>
+</html>

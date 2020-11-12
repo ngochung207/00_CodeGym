@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng cơ thể</title>
+    <link rel="stylesheet" href="can_nang_co_the.css" type="text/css">
+    <script>
+        function analytics() {
+            document.getElementById("result-id").innerHTML = "";
+            let weight, height, bmi;
+            let inter;
+            weight = document.getElementById("idTextBoxWeight").value;
+            height = document.getElementById("idTextBoxHeight").value;
+            if (weight > 0 && height > 0){
+                bmi = weight / (height * height);
+                if (bmi < 18.5) {
+                    inter = "Underweight";
+                } else if (bmi < 25) {
+                    inter = "Normal"
+                } else if (bmi < 30) {
+                    inter = "Overweight"
+                } else {
+                    inter = "Obese"
+                }
+                document.getElementById("result-id").innerHTML = inter;
+            } else {
+                alert("Dữ liệu đầu vào không phù hợp")
+            }
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <th scope="col" class="idText">Cân nặng</th>
+        <th scope="col" class="idText">Chiều cao</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="idTextBoxWeight" class="textBox"></td>
+        <td><input type="text" id="idTextBoxHeight" class="textBox"></td>
+        <td><input type="button" value="Phân tích" onclick="analytics();"></td>
+    </tr>
+    <tr>
+        <td colspan="2" id="result-id"></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
