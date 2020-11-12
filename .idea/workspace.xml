@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02_JavScript/08. If-else/can-nang-co-the.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_JavScript/08. If-else/may-tinh-don-gian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_JavScript/08. If-else/may-tinh-don-gian.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_JavScript/07.Variable/caculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_JavScript/08. If-else/may-tinh-don-gian.css" beforeDir="false" afterPath="$PROJECT_DIR$/02_JavScript/08. If-else/may-tinh-don-gian.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_JavScript/08. If-else/may-tinh-don-gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_JavScript/08. If-else/may-tinh-don-gian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,8 @@
       <workItem from="1605056581824" duration="24248000" />
       <workItem from="1605118112634" duration="3186000" />
       <workItem from="1605150631964" duration="1836000" />
-      <workItem from="1605152543773" duration="1583000" />
+      <workItem from="1605152543773" duration="5685000" />
+      <workItem from="1605162530276" duration="2876000" />
     </task>
     <servers />
   </component>

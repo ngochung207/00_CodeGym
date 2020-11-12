@@ -1,17 +1,22 @@
-body{
-    display: flex;
-}
 .button{
     margin: 5px;
     width: 50px;
     height: 50px;
     font-size: 35px;
     text-align: center;
+    color: blue;
 }
 .input {
     font-size: 25px;
     text-align: right;
+    color: red;
 }
 table{
     text-align: center;
+}
+th{
+    font-family: "Times New Roman";
+    font-size: 20px;
+    text-align: center;
+    color: blue;
 }
