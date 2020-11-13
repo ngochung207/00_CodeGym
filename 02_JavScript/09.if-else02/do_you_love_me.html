@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showYes(){
+            alert("Ok");
+        }
+        function showNo(){
+            let topShow = Math.floor(Math.random()*window.innerHeight);
+            let leftShow = Math.floor(Math.random()*window.innerWidth);
+            console.log(topShow);
+            console.log(leftShow);
+            document.getElementById("content").style.color = "red";
+            document.getElementById('content').style.position = 'absolute';
+            document.getElementById('id1').style.position = 'relative';
+            document.getElementById('id2').style.position = 'absolute';
+            document.getElementById("content").style.top = topShow + "px";
+            document.getElementById("content").style.left = leftShow + "px";
+        }
+    </script>
+</head>
+<body>
+    <span id="content"><h2>Do You Love Me</h2></span>
+    <div id= "div1" style="background-color: brown; width: 500px;height: 500px;">
+        <div id="div2" style="background-color: aquamarine; width: 100px;height: 100px;">
+
+        </div>
+    </div>
+    <input type="button" value="Yes" id="id-yes" onclick="showYes();"/>
+    <input type="button" value="No" id="id-no" onclick="showNo();"/>
+</body>
+</html>
