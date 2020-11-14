@@ -2,55 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=B, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js"></script>
-    <link type="text/css" rel="stylesheet" href="/02_JavScript/file_css.css">
+    <link rel="stylesheet" href="file_css.css">
+
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <ul>
-                    <li>false</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>undefined</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>NaN</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>0</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>the empty string</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Null</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+
+<p>Click the button to sort the array in ascending order.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p><br>
+<p id="demo1"></p>
+
+<script>
+    var nums = [19, 21, 1, 3, 2, 7, 11, 6, 15];
+    target = 25;
+    document.getElementById('demo').innerHTML = nums;
+
+    let towSumValue = towSum(nums, target);
+    document.getElementById('demo1').innerHTML = towSumValue;
+
+    function towSum(nums, target){
+        document.getElementById('demo1').innerHTML =''
+        const numsLength = nums.length;
+        nums = sortArry(nums);
+        let ret = [];
+        let sub = 0;
+        let incremental = 0
+
+        // Kiem tra taget co trong nums.
+        if (nums.indexOf(target) != -1){
+            ret.push(target);
+            return ret;
+        }
+        // Tru dan , kiem tra sau moi lan tru.
+        for (let i=0; i <= numsLength; ++i){
+            incremental += nums[i];
+            sub = (target - incremental);
+            if (sub>=0 && nums.indexOf(sub)!=-1){
+                ret.push(nums[i]);
+                ret.push(nums[nums.indexOf(sub)]);
+                break
+            } else if (sub>0 && nums.indexOf(sub)==-1){
+                ret.push(nums[i]);
+            }
+        }
+        return ret
+    }
+
+    function sortArry(arr){
+        return arr.sort(function(a,b){return a-b})
+    }
+    
+</script>
 </body>
 </html>
