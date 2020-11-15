@@ -16,6 +16,17 @@
             let feet = meter * apha;
             document.getElementById('id-feet').value = feet;
         }
+        function areaSquare(){
+            let Square = document.getElementById('id-square').value;
+            let areaSquare = Square**2;
+            document.getElementById('id-area-square').value = areaSquare;
+        }
+        function areaRectangle(){
+            let length = document.getElementById('id-length').value;
+            let width = document.getElementById('id-width').value;
+            areaRectangle = length * width;
+            document.getElementById('id-area-rectangle').value = areaRectangle;
+        }
     </script>
 </head>
 <body>
@@ -49,7 +60,35 @@
         </tr>
     </table>
     <!-- Bai 3: Tinh dien tich hinh vuong khi biet canh a -->
+    <h3>Bai 3: Tinh dien tich hinh vuong</h3>
+    <table>
+        <tr>
+            <td><b>Nhap vao canh hinh huong</b></td>
+            <td></td>
+            <td><b>Hinh vuong co dien tich la:</b></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="id-square" style="text-align: right"></td>
+            <td><input type="button" value="Convert ==>" onclick="areaSquare();"></td>
+            <td><input type="text" id="id-area-square" style="text-align:right; color: red;"></td>
+        </tr>
+    </table>
     <!-- Bai 4: Tinh dien tich hinh chu nhat khi biet 02 canh a, b -->
+    <h3>Bai 4: Tinh dien tich hinh chu nhat</h3>
+    <table>
+        <tr>
+            <td><b>Nhap vao canh dai</b></td>
+            <td><b>Nhap vao canh ngan</b></td>
+            <td></td>
+            <td><b>Dien tich hinh chu nhat:</b></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="id-length" style="text-align: right"></td>
+            <td><input type="text" id="id-width" style="text-align: right"></td>
+            <td><input type="button" value="Convert ==>" onclick="areaRectangle();"></td>
+            <td><input type="text" id="id-area-rectangle" style="text-align:right; color: red;"></td>
+        </tr>
+    </table>
     <!-- Bai 5: Tinh dien tich tam giac vuong khi biet 02 canh a, b -->
     <!-- Bai 6: Giai phuong trinh bac 1 -->
     <!-- Bai 7: Giai phuong trinh bac 2 -->
