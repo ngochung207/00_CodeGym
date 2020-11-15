@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function convertTemper(){
+            let temper1 = document.getElementById('id-temper1').value;
+            let temper2 = temper1 * 9/5 + 32;
+            document.getElementById('id-temper2').value = temper2;
+        }
+        let convertMeter = function (){
+            let meter = document.getElementById('id-meter').value;
+            const apha = 3.2808;
+            let feet = meter * apha;
+            document.getElementById('id-feet').value = feet;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Bai 1: Chuyen tu do C sang do F -->
+    <h3>Bai 1: Chuyen doi do C sang do F</h3>
+    <table>
+        <tr>
+            <td><b>Input temperature C</b></td>
+            <td></td>
+            <td><b>Output temperature F</b></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="id-temper1" style="text-align: right"></td>
+            <td><input type="button" value="Convert ==>" onclick="convertTemper();"></td>
+            <td><input type="text" id="id-temper2" style="text-align:right; color: red;"></td>
+        </tr>
+    </table>
+    <!-- Bai 2: Chuyen tu met sang feet -->
+    <h3>Bai 2: Chuyen doi m sang feet</h3>
+    <table>
+        <tr>
+            <td><b>Input m</b></td>
+            <td></td>
+            <td><b>Output feet</b></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="id-meter" style="text-align: right"></td>
+            <td><input type="button" value="Convert ==>" onclick="convertMeter();"></td>
+            <td><input type="text" id="id-feet" style="text-align:right; color: red;"></td>
+        </tr>
+    </table>
+    <!-- Bai 3: Tinh dien tich hinh vuong khi biet canh a -->
+    <!-- Bai 4: Tinh dien tich hinh chu nhat khi biet 02 canh a, b -->
+    <!-- Bai 5: Tinh dien tich tam giac vuong khi biet 02 canh a, b -->
+    <!-- Bai 6: Giai phuong trinh bac 1 -->
+    <!-- Bai 7: Giai phuong trinh bac 2 -->
+    <!-- Bai 8: Kiem tra mot so nhap vao co phai la tuoi cua mot nguoi khong. -->
+    <!-- Bai 9: Kiem tra 3 so thuc (a,b,c) nhap vao co phai la canh cua mot tam giac -->
+    <!-- Bai 10: Viet chuong trinh tinh gia dien -->
+    <!-- Bai 11: Viet chuong trinh tinh lai ngan hang -->
+    
+</body>
+</html>
