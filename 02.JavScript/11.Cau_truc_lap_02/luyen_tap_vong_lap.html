@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành. -->
+    <!-- <script>
+        for(var i = 1; i <= 100; i++){
+            document.write(i + ' | ');
+            if (i == 99){
+                alert("Done");
+            }
+        }
+    </script> -->
+    <!-- Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. 
+        Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ. -->
+    <!-- <script>
+        var temper = +prompt("Nhap vao thong tin nhiet do hien tai: ");
+
+        while (temper > 100){
+            temper = +prompt("Nhiet do nhap vao qua cao, giam nhiet do");
+        }
+        while (temper < 20){
+            temper = +prompt("Nhiet do nhap vao qua thap, tang nhiet do");
+        }
+    </script> -->
+    <!-- Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên. -->
+    <!-- <script>
+        var finbonaci = function (number){
+            if (number <= 1){
+                return 1;
+            } else {
+                return (finbonaci(number - 1) + finbonaci(number - 2))
+            }
+        }
+        for (var i = 1; i <= 20; i++){
+            document.write(finbonaci(i)+' | ');
+        }
+        
+    </script> -->
+        <!-- Bài 4: Tìm số đầu tiên trong dãy fibonaci chia hết cho 5. -->
+        <!-- <script>
+        var finbonaci = function (number){
+            if (number <= 1){
+                return 1;
+            } else {
+                return (finbonaci(number - 1) + finbonaci(number - 2))
+            }
+        }
+        for ( var i = 1; true; i++){
+            if (finbonaci(i) % 5 == 0){
+                console.log(finbonaci(i));
+                break;
+            }
+        }
+    </script> -->
+    <!-- Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci. -->
+    <script>
+        var finbonaci = function (number){
+            if (number <= 1){
+                return 1;
+            } else {
+                return (finbonaci(number - 1) + finbonaci(number - 2))
+            }
+        }
+        let sum = 0;
+        for (var i = 1; i <= 20; i++){
+            sum += finbonaci(i);
+        }
+        document.write(sum);
+    </script>
+</body>
+</html>

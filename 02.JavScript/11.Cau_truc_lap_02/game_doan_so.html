@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Game Đoán Số</h3>
+    <p><input type="button" name="" id="id-button-click" value='Play' onclick="functionClick()" style="font-family: 'Lucida Sans'; width: 100px; height: 35px;;"></p>
+    <script>
+        function functionClick(){
+            let element = document.getElementById('id-button-click')
+
+            if ( element.value == 'Play'){
+                element.value = 'Agian';
+                element.style.color = 'red';
+                element.style.fontFamily = 'Lucida Sans';
+
+                let i = 0;
+                while (i < 3 ){
+                    i += 1;
+                    // Người dùng setup lượt chơi.
+                    let getSetup = functionSetup();
+                    let check = getRandom(getSetup.start, getSetup.end);
+                    if (getSetup.choise == check){
+                        alert("YOU WIN!");
+                        console.log(check, getSetup.choise);
+                        break;
+                    } else {
+                        alert ("Bạn còn: " + (3-i))
+                    }
+                } alert("Chúc bạn may mắn lần sau")
+                
+            } else{
+                element.value = 'Play';
+                element.style.color = 'blue';
+            }
+        }
+
+        function functionSetup() {
+            do {
+                var a = parseInt(prompt("Tôi muốn chọn số từ: "));
+            } while (isNaN(a));
+            do{
+                var b = parseInt(prompt("Tôi muốn chọn số đến: "));
+            } while (isNaN(b));
+            do{
+                var c = parseInt(prompt("Người chơi chọn số may mắn: "));
+            } while (isNaN(c));
+            return {start: a, end: b, choise: c};
+        }
+
+        function getRandom(start, end){
+            return Math.floor(Math.random()*(end - start)) + start;
+        }
+
+    </script>
+</body>
+</html>
