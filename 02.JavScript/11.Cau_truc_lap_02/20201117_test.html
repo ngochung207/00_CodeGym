@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- @channel Viết chương trình cho phép người dùng nhập vào 1 số nguyên n, 
+        kiểm tra số nguyên đó có phải số nguyên tố hay không? 
+        và đưa ra thông báo số n có phải số nguyên tố không?-->
+    <script>
+        let inputNumber = +prompt("Nhập vào số nguyên:");
+
+        if (checkPrime(inputNumber)){
+            alert(inputNumber + " Là số nguyên tố.");
+        } else{
+            alert(inputNumber + " Không là số nguyên tố.")
+        }
+
+        function checkPrime(number){
+            let result = true;
+            if (number < 2){
+                return result = false;
+            } else {
+                for(let i = 2; i < number; i++){
+                    if (number % i == 0){
+                        result = false;
+                        break;
+                    }
+                } return result;
+            }
+        }
+
+    </script>
+</body>
+</html>
