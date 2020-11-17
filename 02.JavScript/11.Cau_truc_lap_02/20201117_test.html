@@ -10,7 +10,10 @@
         kiểm tra số nguyên đó có phải số nguyên tố hay không? 
         và đưa ra thông báo số n có phải số nguyên tố không?-->
     <script>
-        let inputNumber = +prompt("Nhập vào số nguyên:");
+
+        do{
+            var inputNumber = parseInt(prompt("Nhập vào số nguyên:"));
+        } while (isNaN(inputNumber))
 
         if (checkPrime(inputNumber)){
             alert(inputNumber + " Là số nguyên tố.");
