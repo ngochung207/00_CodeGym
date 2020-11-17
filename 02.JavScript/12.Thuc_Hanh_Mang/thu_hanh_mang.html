@@ -11,8 +11,8 @@
     <table>
         <tr>
             <td><input type="text" name="" id="id-text" style="text-align: right;"/></td>
-            <td><input type="button" name="" id="id-add" value="Add" onclick="functionAdd();"/></td>
-            <td><input type="button" name="" id="id-display" value="Display" onclick="functionDisplay();"/></td>
+            <td><input type="button" name="" id="id-add" value="Add" onclick="functionAdd(document.getElementById('id-text').value);"/></td>
+            <td><input type="button" name="" id="id-display" value="Display" onclick="functionDisplay(myArr);"/></td>
         </tr>
         <tr>
             <td colspan="3" id='id-result'></td>
@@ -21,13 +21,18 @@
 
 <script>
     var myArr = [];
+    
     function functionAdd(value){
         myArr.push(value);
+        document.getElementById('id-text').value = '';
     }
-    function functionDisplay(arr){
-        arr.forEach(function(element){
-            let string = "Element" + element.index + '=' + element.Value
+
+    function functionDisplay(myArr){
+        var str ='';
+        for (var index in myArr) {
+            str += 'Element ' + index + ':' + myArr[index] + '<br>';
         }
+        return document.getElementById('id-result').innerHTML = str;
     }
 </script>
 </body>
