@@ -12,18 +12,20 @@
         function functionClick(){
             let element = document.getElementById('id-button-click')
 
-            if ( element.value == 'Play'){
+            if ( element.value === 'Play'){
                 element.value = 'Agian';
                 element.style.color = 'red';
                 element.style.fontFamily = 'Lucida Sans';
 
                 let i = 0;
+                let j, pointCheck;
+                let getSetup = functionSetup ()
                 while (i < 3 ){
                     i += 1;
                     // Người dùng setup lượt chơi.
-                    let getSetup = functionSetup();
-                    let check = getRandom(getSetup.start, getSetup.end);
-                    if (getSetup.choise == check){
+                    pointCheck = getRandom(getSetup.start, getSetup.end);
+                    j = choiseNumber();
+                    if (j === pointCheck){
                         alert("YOU WIN!");
                         console.log(check, getSetup.choise);
                         break;
@@ -39,20 +41,22 @@
         }
 
         function functionSetup() {
+            let a,b,c;
             do {
-                var a = parseInt(prompt("Tôi muốn chọn số từ: "));
+                a = parseInt(prompt("Tôi muốn chọn số từ: "));
             } while (isNaN(a));
             do{
-                var b = parseInt(prompt("Tôi muốn chọn số đến: "));
+                b = parseInt(prompt("Tôi muốn chọn số đến: "));
             } while (isNaN(b));
-            do{
-                var c = parseInt(prompt("Người chơi chọn số may mắn: "));
-            } while (isNaN(c));
-            return {start: a, end: b, choise: c};
+            return {start: a, end: b};
         }
 
         function getRandom(start, end){
             return Math.floor(Math.random()*(end - start)) + start;
+        }
+
+        function choiseNumber() {
+            return parseInt(prompt("Người chơi chọn số may mắn: "));
         }
 
     </script>

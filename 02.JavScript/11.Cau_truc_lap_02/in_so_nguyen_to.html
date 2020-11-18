@@ -13,17 +13,15 @@
         let point = +prompt("Nhap vao so luong so nguyen to can in ra");
 
         function checkPrime(number){
-            let result = true;
             if (number < 2){
-                return result = false;
+                return false;
             } else {
-                for(let i = 2; i < number; i++){
-                    if (number % i == 0){
-                        result = false;
-                        break;
+                for(let i = 2; i < Math.sqrt(number); i++){
+                    if (number % i === 0){
+                        return false;
                     }
-                } return result;
-            }
+                }
+            } return true;
         }
 
         let cont = 0;
@@ -31,9 +29,9 @@
 
         do {
             i+=1;
-            if (checkPrime(i) == true){
-                document.write(i+'\n');
-                cont +=1;
+            if (checkPrime(i) === true){
+                document.write(i+' ');
+                cont++;
             }
         } while (cont < point)
     

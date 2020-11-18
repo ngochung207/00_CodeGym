@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// for(let i = 1; i <=20; i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+
+function displayEvent(n){
+    let count = 0;
+    let i = 1;
+
+    while (true){
+        if(i % 2 === 0){
+            console.log(i);
+            count++;
+        }
+        if (count === n) break;
+        i+=1
+    }
+}
+displayEvent(20);
+</script>
+</body>
+</html>
