@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/gioHocLyThuyet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/timGiaTriTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/timGiaTriLonNhatTrongMang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/game_doan_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/game_doan_so.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/in_so_nguyen_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/in_so_nguyen_to.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/luyen_tap_vong_lap.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/luyen_tap_vong_lap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/thu_hanh_mang.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/thu_hanh_mang.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,7 @@
       <workItem from="1605162530276" duration="5824000" />
       <workItem from="1605174290346" duration="1451000" />
       <workItem from="1605607214010" duration="1470000" />
-      <workItem from="1605662374739" duration="5979000" />
+      <workItem from="1605662374739" duration="6646000" />
     </task>
     <servers />
   </component>
