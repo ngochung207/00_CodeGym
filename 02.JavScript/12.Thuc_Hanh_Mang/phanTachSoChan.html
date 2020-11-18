@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkEven(number){
+        if (number > 0 && number % 2 === 0) return true
+        else return false;
+    }
+    function analyze(number){
+        let str = number.toString();
+        let result = [];
+        for(let i = 0; i < str.length; i++){
+            if (checkEven(str[i-1]) && checkEven(str[i])){
+                result.push('-', str[i])
+            } else {
+                result.push(str[i])
+            }
+        } return result
+    }
+console.log(analyze(028564892).join(''))
+</script>
+</body>
+</html>
