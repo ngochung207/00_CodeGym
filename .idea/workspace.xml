@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/daoNguocMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/timSoLanXuatHienCuaPhanTuTrongMang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/game_doan_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/game_doan_so.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/daoNguocMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/daoNguocMang.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,7 @@
       <workItem from="1605162530276" duration="5824000" />
       <workItem from="1605174290346" duration="1451000" />
       <workItem from="1605607214010" duration="1470000" />
-      <workItem from="1605662374739" duration="7996000" />
+      <workItem from="1605662374739" duration="10893000" />
     </task>
     <servers />
   </component>
@@ -116,6 +118,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="426" y="113" key="#Inspections" timestamp="1605682283943">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="426" y="113" key="#Inspections/0.0.1600.870@0.0.1600.870" timestamp="1605682283943" />
     <state x="254" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605002958575">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tìm vị trí xuất hiện của một phần tử trong mảng.
+    function findIndex(array,element){
+        let result = [];
+        let idx = array.indexOf(element);
+        while (idx !== -1){
+            result.push(idx);
+            idx = array.indexOf(element, idx+1);
+        }
+        return result;
+    }
+    const array = 'Cộng hòa xã hội chủ nghĩa việt nam';
+    console.log(findIndex(array,'ng'))
+</script>
+</body>
+</html>
