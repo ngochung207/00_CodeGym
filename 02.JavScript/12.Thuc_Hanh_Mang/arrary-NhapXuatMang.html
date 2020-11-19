@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập xuất mảng</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="3"><b>Nhập Dữ Liệu</b></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="id-input" style="text-align: right"></td>
+        <td><input type="button" value="Add Value" onclick="inputArray(myArray); showArray();"</td>
+        <td><input type="button" value="Find vale" onclick="findValue(myArray, document.getElementById('id-input').value);showFindArray();"></td>
+    </tr>
+    <tr>
+        <td>Giá trị của mảng: </td>
+        <td colspan="2" id="id-result-add"></td>
+    </tr>
+    <tr>
+        <td>Vị trí giá trị tìm kiếm:</td>
+        <td colspan="2" id="id-result-find"></td>
+    </tr>
+
+</table>
+<script>
+
+    let myArray = new Array(); // Khởi tạo mảng chứa giá trị nhập vào.
+    let findArrayResult = new Array(); // Khởi tạo mảng chứa vị trí giá trị tìm kiếm.
+
+    // Hàm thêm value giá trị vào mảng array.
+    function addItemInArray(array, value){
+        let size = array.length;
+        array[size] =  value;
+    }
+
+    // Kiểm tra giá trị tại ô input nếu hợp lệ cho phép thêm vào mảng.
+    function inputArray(myArray) {
+       let value = document.getElementById('id-input').value;
+       if (!isNaN(value) && value !== '') {
+           addItemInArray(myArray,value);
+           document.getElementById('id-input').value = '';
+       } else {
+           alert("Bạn phải nhập vào số và không được để trống")
+       }
+        return myArray;
+    }
+
+    // Show giá trị nhập vào.
+    function showArray(){
+        // document.getElementById('id-result').value = myArray;
+        document.getElementById('id-result-add').innerHTML = myArray;
+    }
+
+    // Tìm kiếm giá trị trong một mảng. Giá trị trả về là một mảng chứa Index của value trong mảng.
+    function findValue(array, number){
+        let size = array.length;
+
+        for(let i=0; i < size; i++){
+            if (array[i] === number){
+                addItemInArray(findArrayResult,i);
+            }
+        }
+        return findArrayResult;
+    }
+
+    //Show index giá trị tìm kiếm.
+    function showFindArray(){
+        if (findArrayResult.length !== 0) {
+            document.getElementById('id-result-find').innerHTML = findArrayResult;
+            findArrayResult = [];
+        } else {
+            document.getElementById('id-result-find').innerHTML = 'Not find value';
+        }
+    }
+
+
+</script>
+</body>
+</html>
