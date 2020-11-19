@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khử trùng giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    // Khử trùng giá trị.
+    function newArray(arr){
+        let myArr = new Array();
+        for (let i = 0; i < arr.length; i++){
+            if (arr.indexOf(arr[i]) === i){
+                myArr.push(arr[i]);
+            }
+        } return myArr
+    }
+
+    // Xóa giá trị trong mảng
+    // xóa toàn bộ giá trị value trong mảng.
+    function delValueInArray(arr, value){
+        let newArr = [];
+        arr.forEach(function (element){
+            if (element !== value){
+                newArr.push(element);
+            }
+        });
+        return newArr;
+    }
+    // Tìm MIN dương, MAX âm
+    function positiveNumbers(arr){
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 0){
+                newArr.push(arr[i]);
+            }
+        } return newArr;
+    }
+    function maxArray(arr){
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (max < arr[i]){
+                max = arr[i];
+            }
+        } return max;
+    }
+
+    let arr = [4,5,6,20,2,3,-76,3,1,3];
+
+    console.log(maxArray    (positiveNumbers(arr)));
+
+</script>
+</body>
+</html>

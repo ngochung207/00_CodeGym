@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/arrary-NhapXuatMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/array-timKiem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/tuDien.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/veHinhTamGiac.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/veHinhTamGiac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/arrary-NhapXuatMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/arrary-NhapXuatMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/array-timKiem.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/array-khuTrung.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1605740794968" duration="1032000" />
       <workItem from="1605742089728" duration="195000" />
       <workItem from="1605742316887" duration="327000" />
-      <workItem from="1605747934551" duration="8240000" />
+      <workItem from="1605747934551" duration="14690000" />
     </task>
     <servers />
   </component>
@@ -208,9 +206,9 @@
     </state>
     <state x="162" y="152" key="SettingsEditor/0.0.1600.870@0.0.1600.870" timestamp="1605742283901" />
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604965428163" />
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1605742120263">
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1605769819709">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1605742120263" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1605769819709" />
   </component>
 </project>

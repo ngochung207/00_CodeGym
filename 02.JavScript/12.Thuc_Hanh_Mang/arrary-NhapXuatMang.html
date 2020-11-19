@@ -14,6 +14,8 @@
         <td><input type="text" id="id-input" style="text-align: right"></td>
         <td><input type="button" value="Add Value" onclick="inputArray(myArray); showArray();"</td>
         <td><input type="button" value="Find vale" onclick="findValue(myArray, document.getElementById('id-input').value);showFindArray();"></td>
+        <td><input type="button" value="Max value" onclick="showMaxValue(myArray);"></td>
+        <td><input type="button" value="Min value" onclick="showMinValue(myArray);"></td>
     </tr>
     <tr>
         <td>Giá trị của mảng: </td>
@@ -22,6 +24,14 @@
     <tr>
         <td>Vị trí giá trị tìm kiếm:</td>
         <td colspan="2" id="id-result-find"></td>
+    </tr>
+    <tr>
+        <td>Giá trị dương nhỏ nhất:</td>
+        <td colspan="2" id="id-result-max"></td>
+    </tr>
+    <tr>
+        <td>Giá trị âm lớn nhất:</td>
+        <td colspan="2" id="id-result-min"></td>
     </tr>
 
 </table>
@@ -66,6 +76,14 @@
         return findArrayResult;
     }
 
+    function showMaxValue(myArray){
+        document.getElementById('id-result-max').innerHTML = minArray(positiveNumbers(myArray));
+    }
+
+    function showMinValue(myArray){
+        return document.getElementById('id-result-min').innerHTML = maxArray(negativeNumbers(myArray));
+    }
+
     //Show index giá trị tìm kiếm.
     function showFindArray(){
         if (findArrayResult.length !== 0) {
@@ -76,7 +94,52 @@
         }
     }
 
-
+    // Xóa toàn bộ giá trị value trong mảng.
+    function delValueInArray(arr, value){
+        let newArr = [];
+        arr.forEach(function (element){
+            if (element !== value){
+                newArr.push(element);
+            }
+        });
+        return newArr;
+    }
+    // Lấy ra các giá trị dương trong mảng
+    function positiveNumbers(arr){
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 0){
+                newArr.push(arr[i]);
+            }
+        } return newArr;
+    }
+    // Lấy ra các giá trị âm trong mảng
+    function negativeNumbers(arr){
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < 0){
+                newArr.push(arr[i]);
+            }
+        } return newArr;
+    }
+    // Lấy ra giá trị lớn của mảng
+    function maxArray(arr){
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (max < arr[i]){
+                max = arr[i];
+            }
+        } return max;
+    }
+    // Lấy giá trị nhỏ nhất của mảng
+    function minArray(arr){
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (min > arr[i]){
+                min = arr[i];
+            }
+        } return min;
+    }
 </script>
 </body>
 </html>
