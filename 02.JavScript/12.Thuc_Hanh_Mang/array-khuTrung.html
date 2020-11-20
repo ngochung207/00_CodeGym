@@ -6,48 +6,31 @@
 </head>
 <body>
 <script>
-    // Khử trùng giá trị.
-    function newArray(arr){
-        let myArr = new Array();
-        for (let i = 0; i < arr.length; i++){
-            if (arr.indexOf(arr[i]) === i){
-                myArr.push(arr[i]);
-            }
-        } return myArr
-    }
+  // Chèn 1 giá trị vào vị trí k
+  let arr = [9, 12, 5, 8, 6, 11, 7];
 
-    // Xóa giá trị trong mảng
-    // xóa toàn bộ giá trị value trong mảng.
-    function delValueInArray(arr, value){
-        let newArr = [];
-        arr.forEach(function (element){
-            if (element !== value){
-                newArr.push(element);
-            }
-        });
-        return newArr;
-    }
-    // Tìm MIN dương, MAX âm
-    function positiveNumbers(arr){
-        let newArr = [];
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] > 0){
-                newArr.push(arr[i]);
-            }
-        } return newArr;
-    }
-    function maxArray(arr){
-        let max = arr[0];
-        for (let i = 0; i < arr.length; i++) {
-            if (max < arr[i]){
-                max = arr[i];
-            }
-        } return max;
-    }
+  let size = arr.length;
+  // console.log(insertValue(arr, 3, 400));
 
-    let arr = [4,5,6,20,2,3,-76,3,1,3];
+  function insertValue(arr, index, value) {
+      for (let i = arr.length-1; i >= index; i--) {
+          arr[i + 1] = arr[i];
+      }
+      arr[index] = value;
+      return arr;
+  }
 
-    console.log(maxArray    (positiveNumbers(arr)));
+  function delValue(arr, index){
+      for(let i = index; i < arr.length; i++){
+          arr[i] = arr[i+1]
+      } return arr;
+  }
+function displayArray(arr){
+
+}
+
+
+console.log(delValue(arr,1))
 
 </script>
 </body>

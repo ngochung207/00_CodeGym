@@ -8,10 +8,50 @@
 <h3>Tra cứu từ điển</h3>
 <table>
     <tr>
-        <td><input type="text"></td>
-        <td><input type="button" value="Add"></td>
-        <td><input type="button" value="Search"></td>
+        <td></td>
+        <td>English</td>
+        <td>Viet Nam</td>
     </tr>
+    <tr>
+        <td><input type="button" value="Thêm từ" style="width: 80px; text-align: left" onclick="addWord(document.getElementById('id-add-en-text').value, document.getElementById('id-add-vi-text').value);"></td>
+        <td><input type="text" id="id-add-en-text"></td>
+        <td><input type="text" id="id-add-vi-text"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Search" style="width: 80px; text-align: left" onclick="showFindWord();"></td>
+        <td><input type="text" id="id-find-en-text"></td>
+        <td><input type="text" id="id-find-vi-text"></td>
+    </tr>
+    <tr>
+        <td colspan="3" id="id-result"></td>
+    </tr>
+
 </table>
+<script>
+
+    let dic = new Array();
+
+    function newWord(key, value) {
+        this.keys = key;
+        this.values = value;
+    }
+
+    function addWord(enKey, viValue){
+        let word = new newWord(enKey, viValue);
+        return dic.push(word);
+    }
+
+    function findWord(world) {
+        dic.forEach(function (element) {
+            if (element.keys == world){
+                let a = element.values;
+            }else return 'World not in diction'
+        });
+    }
+
+    function showFindWord(){
+        document.getElementById('id-find-vi-text').value = findWord(document.getElementById('id-find-en-text').value);
+    }
+</script>
 </body>
 </html>

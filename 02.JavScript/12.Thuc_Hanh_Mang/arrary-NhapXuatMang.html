@@ -37,18 +37,19 @@
 </table>
 <script>
 
-    let myArray = new Array(); // Khởi tạo mảng chứa giá trị nhập vào.
-    let findArrayResult = new Array(); // Khởi tạo mảng chứa vị trí giá trị tìm kiếm.
+    let myArray = new Array();; // Khởi tạo mảng chứa giá trị nhập vào.
+    let findArrayResult = new Array() // Khởi tạo mảng chứa vị trí giá trị tìm kiếm.
 
     // Hàm thêm value giá trị vào mảng array.
     function addItemInArray(array, value){
-        let size = array.length;
-        array[size] =  value;
+        // let size = array.length;
+        // array[size] =  value;
+        array.push(value);
     }
 
     // Kiểm tra giá trị tại ô input nếu hợp lệ cho phép thêm vào mảng.
     function inputArray(myArray) {
-       let value = document.getElementById('id-input').value;
+       let value = parseInt(document.getElementById('id-input').value);
        if (!isNaN(value) && value !== '') {
            addItemInArray(myArray,value);
            document.getElementById('id-input').value = '';
@@ -69,7 +70,7 @@
         let size = array.length;
 
         for(let i=0; i < size; i++){
-            if (array[i] === number){
+            if (array[i] === parseInt(number)){
                 addItemInArray(findArrayResult,i);
             }
         }
@@ -77,11 +78,11 @@
     }
 
     function showMaxValue(myArray){
-        document.getElementById('id-result-max').innerHTML = minArray(positiveNumbers(myArray));
+        document.getElementById('id-result-max').innerText = minArray(positiveNumbers(myArray));
     }
 
     function showMinValue(myArray){
-        return document.getElementById('id-result-min').innerHTML = maxArray(negativeNumbers(myArray));
+        document.getElementById('id-result-min').innerText = maxArray(negativeNumbers(myArray));
     }
 
     //Show index giá trị tìm kiếm.
