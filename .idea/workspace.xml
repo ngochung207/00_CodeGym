@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/soSanhHaiMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/soSanhHaiMang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.JavScript/13.Ham/quanLyBanHang.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.JavScript/13.Ham/quanLyBanHang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.JavScript/13.Ham/quanLyBanHang.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00.Bai_Giang/Mảng Arrary.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/00.Bai_Giang/Mảng Arrary.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/tuDien.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/tuDien.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -60,6 +59,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -110,7 +110,8 @@
       <workItem from="1605865340625" duration="4424000" />
       <workItem from="1605869852474" duration="1117000" />
       <workItem from="1605879953834" duration="160000" />
-      <workItem from="1605919702993" duration="1826000" />
+      <workItem from="1605919702993" duration="2140000" />
+      <workItem from="1605961029531" duration="10153000" />
     </task>
     <servers />
   </component>
