@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db0be3bd-cbce-4906-9c5b-68e785793cfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/soSanhHaiMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/soSanhHaiMang.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00.Bai_Giang/Mảng Arrary.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/00.Bai_Giang/Mảng Arrary.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/arrary-NhapXuatMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/arrary-NhapXuatMang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/array-khuTrung.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/array-khuTrung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/tuDien.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/tuDien.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,6 +45,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/luyen_tap_vong_lap.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/02.JavScript/12.Thuc_Hanh_Mang/soSanhHaiMang.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/02.JavScript/11.Cau_truc_lap_02/game_doan_so.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1k31QFU9J60woSQG2MxB4iCmSB1" />
@@ -105,7 +106,11 @@
       <workItem from="1605742316887" duration="327000" />
       <workItem from="1605747934551" duration="17512000" />
       <workItem from="1605834593163" duration="1211000" />
-      <workItem from="1605835839072" duration="16192000" />
+      <workItem from="1605835839072" duration="18934000" />
+      <workItem from="1605865340625" duration="4424000" />
+      <workItem from="1605869852474" duration="1117000" />
+      <workItem from="1605879953834" duration="160000" />
+      <workItem from="1605919702993" duration="1826000" />
     </task>
     <servers />
   </component>

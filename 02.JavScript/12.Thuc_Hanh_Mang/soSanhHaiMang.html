@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Sánh Hai Mảng</title>
+</head>
+<body>
+<p>
+    Cho 2 mảng , so sánh các giá trị trong mảng.<br>
+    Tìm chênh lệch
+</p>
+<script src="soSanhHaiMang.js"></script>
+<table>
+    <tr>
+        <td></td>
+        <td>Mảng thứ 1:</td>
+        <td>Mảng thứ 2:</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="Thêm phần tử" onclick="addItem1(document.getElementById('id-key-arr-1').value,document.getElementById('id-value-arr-1').value);showDic(dic1,'id-result-1')"></td>
+        <td><input type="button" value="Thêm phần tử" onclick="addItem2(document.getElementById('id-key-arr-2').value, document.getElementById('id-value-arr-2').value);showDic(dic2,'id-result-2')"></td>
+    </tr>
+    <tr>
+        <td>Keys:</td>
+        <td><input type="text" id="id-key-arr-1"/></td>
+        <td><input type="text" id="id-key-arr-2"/></td>
+    </tr>
+    <tr>
+        <td><lable>Value:</lable></td>
+        <td><input type="text" id="id-value-arr-1"/></td>
+        <td><input type="text" id="id-value-arr-2"/></td>
+    </tr>
+    <tr>
+        <td>Show Array:</td>
+        <td><div id="id-result-1"></div></td>
+        <td><div id="id-result-2"></div></td>
+    </tr>
+</table>
+</body>
+</html>

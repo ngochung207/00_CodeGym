@@ -43,9 +43,9 @@
 
     function findWord(world) {
         dic.forEach(function (element) {
-            if (element.keys == world){
-                let a = element.values;
-            }else return 'World not in diction'
+            if (element.keys === world.toString()){
+                return element.values;
+            } else return 'World not in diction'
         });
     }
 
