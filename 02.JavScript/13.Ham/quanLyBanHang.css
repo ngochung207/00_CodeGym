@@ -34,5 +34,18 @@ h3{
 #id-result-find{
     text-align: left;
     font-style: italic;
-    text-orientation: upright;
+    vertical-align: top;
 }
+
+.listLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.listData{
+    min-width: 486px;
+}
+.cls-span{
+    flex: 1px;
+}
+
